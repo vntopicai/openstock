@@ -1,0 +1,27 @@
+{
+  "name": "stock-api",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio",
+    "seed": "bun run scripts/seed.ts",
+    "seed:fundamentals": "bun run scripts/seedFundamentals.ts",
+    "import:csv": "bun run scripts/import-csv.ts"
+  },
+  "dependencies": {
+    "elysia": "^1.0.0",
+    "@elysiajs/cors": "^1.0.0",
+    "@elysiajs/websocket": "^1.0.0",
+    "drizzle-orm": "^0.30.0",
+    "postgres": "^3.4.0",
+    "redis": "^4.6.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.20.0",
+    "typescript": "^5.3.0",
+    "@types/node": "^20.10.0"
+  }
+}
